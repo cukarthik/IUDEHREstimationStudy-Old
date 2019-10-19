@@ -1,0 +1,510 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4275113,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "65200003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Insertion of intrauterine contraceptive device",
+          "DOMAIN_ID": "Procedure",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Procedure",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "IUD Placement Procedure",
+      "id": 0
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4061405,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "169477005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Intrauterine contraceptive device fitted",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      }]},
+      "name": "IUD Observation",
+      "id": 1
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4186930,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "46706006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Replacement of intrauterine contraceptive device",
+          "DOMAIN_ID": "Procedure",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Procedure",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "IUD Replacement",
+      "id": 3
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1718400,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1856515",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Levonorgestrel Intrauterine System",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "Levonorgestrel Intrauterine System Drug",
+      "id": 13
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36617602,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "10014759",
+            "VOCABULARY_ID": "MedDRA",
+            "CONCEPT_NAME": "Endometrial neoplasm",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "PT",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4048225,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "123844007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Neoplasm of endometrium",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Endometrial Neoplasm",
+      "id": 16
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 37103694,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "10029109",
+            "VOCABULARY_ID": "MedDRA",
+            "CONCEPT_NAME": "Cervix neoplasms",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "HLT",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4047648,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "123841004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Neoplasm of uterine cervix",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Cervical Neoplasm",
+      "id": 17
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "EndWindow": null,
+          "Criteria": {"ProcedureOccurrence": {
+            "ProcedureType": null,
+            "CorrelatedCriteria": null,
+            "CodesetId": 3,
+            "ProcedureSourceConcept": null,
+            "Quantity": null,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "ProcedureTypeExclude": false,
+            "VisitType": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "Modifier": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No Prior Replacement",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "EndWindow": null,
+          "Criteria": {"Observation": {
+            "ValueAsConcept": null,
+            "ObservationType": null,
+            "CorrelatedCriteria": null,
+            "ObservationTypeExclude": false,
+            "ValueAsString": null,
+            "CodesetId": 1,
+            "ProviderSpecialty": null,
+            "Gender": null,
+            "Unit": null,
+            "ObservationSourceConcept": null,
+            "VisitType": null,
+            "ValueAsNumber": null,
+            "Qualifier": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No Prior IUD Observation",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [],
+        "Type": "ALL",
+        "DemographicCriteriaList": [{
+          "Ethnicity": null,
+          "OccurrenceEndDate": null,
+          "Race": null,
+          "Gender": null,
+          "OccurrenceStartDate": null,
+          "Age": {
+            "Op": "lte",
+            "Extent": null,
+            "Value": 45
+          }
+        }],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Age",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [],
+        "Type": "ALL",
+        "DemographicCriteriaList": [{
+          "Ethnicity": null,
+          "OccurrenceEndDate": null,
+          "Race": null,
+          "Gender": [
+            {
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_ID": 45766035,
+              "STANDARD_CONCEPT": null,
+              "CONCEPT_CODE": "703118005",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_NAME": "Feminine gender",
+              "DOMAIN_ID": "Gender",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "CONCEPT_CLASS_ID": null,
+              "INVALID_REASON": null
+            },
+            {
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_ID": 8532,
+              "STANDARD_CONCEPT": null,
+              "CONCEPT_CODE": "F",
+              "VOCABULARY_ID": "Gender",
+              "CONCEPT_NAME": "FEMALE",
+              "DOMAIN_ID": "Gender",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "CONCEPT_CLASS_ID": null,
+              "INVALID_REASON": null
+            }
+          ],
+          "OccurrenceStartDate": null,
+          "Age": null
+        }],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Gender",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "End": {
+              "Days": null,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "EndWindow": null,
+          "Criteria": {"DrugExposure": {
+            "OccurrenceEndDate": null,
+            "CorrelatedCriteria": null,
+            "DrugSourceConcept": null,
+            "CodesetId": 13,
+            "DrugTypeExclude": false,
+            "Quantity": null,
+            "DrugType": null,
+            "ProviderSpecialty": null,
+            "EffectiveDrugDose": null,
+            "Gender": null,
+            "DaysSupply": null,
+            "DoseUnit": null,
+            "VisitType": null,
+            "Refills": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "RouteConcept": null,
+            "StopReason": null,
+            "LotNumber": null,
+            "Age": null
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 1
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "Levonorgestrel IUD",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": null,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"ConditionOccurrence": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "ConditionTypeExclude": false,
+              "CodesetId": 16,
+              "ProviderSpecialty": null,
+              "Gender": null,
+              "VisitType": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "ConditionType": null,
+              "ConditionSourceConcept": null,
+              "StopReason": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": null,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"ConditionOccurrence": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "ConditionTypeExclude": false,
+              "CodesetId": 17,
+              "ProviderSpecialty": null,
+              "Gender": null,
+              "VisitType": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "ConditionType": null,
+              "ConditionSourceConcept": null,
+              "StopReason": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          }
+        ],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No Prior Endometrial or Cervical Neoplasm",
+      "description": null
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ProcedureOccurrence": {
+      "ProcedureType": null,
+      "CorrelatedCriteria": null,
+      "CodesetId": 0,
+      "ProcedureSourceConcept": null,
+      "Quantity": null,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "ProcedureTypeExclude": false,
+      "VisitType": null,
+      "First": true,
+      "OccurrenceStartDate": {
+        "Op": "gte",
+        "Extent": null,
+        "Value": "2003-01-01"
+      },
+      "Modifier": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 365
+    }
+  }
+}

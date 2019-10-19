@@ -1,0 +1,604 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 44502442,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "8210/2-C53.0",
+          "VOCABULARY_ID": "ICDO3",
+          "CONCEPT_NAME": "Adenocarcinoma in situ in adenomatous polyp of Endocervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "ICDO Condition",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4116358,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "255196008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Adenomatous polyp of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672361,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10001239",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Adenomatous polyp of cervix (excl mucous polyp)",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672352,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10048864",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Benign cervical tumor",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672349,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10004246",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Benign cervical tumour",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672350,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10004247",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Benign cervix uteri neoplasm NOS",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36617530,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10004312",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Benign neoplasm of cervix uteri",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "PT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 196364,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "92056006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Benign neoplasm of uterine cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672362,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10008225",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervical adenomatous polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36617531,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10008254",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervical cyst",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "PT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 192676,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "285836003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cervical intraepithelial neoplasia grade 1",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36617532,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10008297",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervical polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "PT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672356,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10008320",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervical uterine polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4061209,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "198203009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cervicitis with Nabothian cyst",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36617533,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10008338",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervix adenomatous polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "PT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36617564,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10055094",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervix cancer metastatic",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "PT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 37103694,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10029109",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Cervix neoplasms",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "HLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4023453,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "19372002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Chronic cystic cervicitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4219339,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "81956008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cyst of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4108901,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "253833001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Embryonic cyst of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672359,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10050072",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Endocervical polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4061049,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "198206001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Endocervicitis with Nabothian cyst",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672478,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10065593",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Lymphoepithelioma-like carcinoma of cervix metastatic",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4283743,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "369500009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from fallopian tube",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4289386,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "369501008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from ovary",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4281162,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "369574004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from vagina",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672357,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10028138",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Mucous polyp of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672354,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10028673",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Nabothian cyst",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4047648,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "123841004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neoplasm of uterine cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4280498,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "65576009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Polyp of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672358,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10036124",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Polyp of cervix",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672364,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10036125",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Polyp of cervix adenomatous",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36672360,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "10066346",
+          "VOCABULARY_ID": "MedDRA",
+          "CONCEPT_NAME": "Portio polyp",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "LLT",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "High Grade Cervical Neoplasm Alt",
+    "id": 0
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "ConditionTypeExclude": false,
+      "CodesetId": 0,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "VisitType": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "ConditionType": null,
+      "ConditionSourceConcept": null,
+      "StopReason": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

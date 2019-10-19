@@ -1,0 +1,2248 @@
+{
+  "ConceptSets": [
+    {
+      "id": 0,
+      "name": "IUD Placement Procedure",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4275113,
+              "CONCEPT_NAME": "Insertion of intrauterine contraceptive device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "65200003",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "IUD Observation",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4061405,
+              "CONCEPT_NAME": "Intrauterine contraceptive device fitted",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "169477005",
+              "DOMAIN_ID": "Observation",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "IUD Replacement",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4186930,
+              "CONCEPT_NAME": "Replacement of intrauterine contraceptive device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "46706006",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Levonorgestrel Intrauterine System Drug",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 1718400,
+              "CONCEPT_NAME": "Levonorgestrel Intrauterine System",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1856515",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "Endometrial Neoplasm",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 36617602,
+              "CONCEPT_NAME": "Endometrial neoplasm",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10014759",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4048225,
+              "CONCEPT_NAME": "Neoplasm of endometrium",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "123844007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Cervical Neoplasm",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 37103694,
+              "CONCEPT_NAME": "Cervix neoplasms",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10029109",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "HLT"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4047648,
+              "CONCEPT_NAME": "Neoplasm of uterine cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "123841004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Gardasil",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 45698332,
+              "CONCEPT_NAME": "GARDASIL - human papillomavirus quadrivalent (types 6, 11, 16, and 18) vaccine, recombinant injection, suspension",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "30952400-0572-4431-9150-3a41affffb9a",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "SPL",
+              "CONCEPT_CLASS_ID": "Vaccine"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Vaginal and Systemic Contraception",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 21602472,
+              "CONCEPT_NAME": "HORMONAL CONTRACEPTIVES FOR SYSTEMIC USE",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "G03A",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "ATC",
+              "CONCEPT_CLASS_ID": "ATC 3rd"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 21602450,
+              "CONCEPT_NAME": "Intravaginal contraceptives",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "G02BB",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "ATC",
+              "CONCEPT_CLASS_ID": "ATC 4th"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 21602451,
+              "CONCEPT_NAME": "vaginal ring with progestogen and estrogen",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "G02BB01",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "ATC",
+              "CONCEPT_CLASS_ID": "ATC 5th"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Preventive Screening Procedure OBGYN",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 2514516,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99381",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514517,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99382",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514518,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99383",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514519,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99384",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514520,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99385",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514521,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99386",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514522,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99387",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514523,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99391",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514524,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99392",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514525,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99393",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514526,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99394",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514527,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99395",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514528,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99396",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514529,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99397",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2720580,
+              "CONCEPT_NAME": "Screening papanicolaou smear; obtaining, preparing and conveyance of cervical or vaginal smear to laboratory",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "Q0091",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Preventive Screening Procedure OBGYN",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 2514516,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99381",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514517,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99382",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514518,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99383",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514519,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99384",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514520,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99385",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514521,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99386",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514522,
+              "CONCEPT_NAME": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnos",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99387",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514523,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99391",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514524,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99392",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514525,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99393",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514526,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99394",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514527,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99395",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514528,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99396",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2514529,
+              "CONCEPT_NAME": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diag",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "99397",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2720580,
+              "CONCEPT_NAME": "Screening papanicolaou smear; obtaining, preparing and conveyance of cervical or vaginal smear to laboratory",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "Q0091",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Cervical Neoplasm Without Polyp or CIN I",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 192676,
+              "CONCEPT_NAME": "Cervical intraepithelial neoplasia grade 1",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "285836003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 37103694,
+              "CONCEPT_NAME": "Cervix neoplasms",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10029109",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "HLT"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4047648,
+              "CONCEPT_NAME": "Neoplasm of uterine cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "123841004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4280498,
+              "CONCEPT_NAME": "Polyp of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "65576009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Estrogen",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4334381,
+              "CONCEPT_NAME": "Estrogen",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "N0000175825",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "NDFRT",
+              "CONCEPT_CLASS_ID": "Pharmacologic Class"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "High Grade Cervical Neoplasm Alt",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 44502442,
+              "CONCEPT_NAME": "Adenocarcinoma in situ in adenomatous polyp of Endocervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "8210/2-C53.0",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "ICDO3",
+              "CONCEPT_CLASS_ID": "ICDO Condition"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4116358,
+              "CONCEPT_NAME": "Adenomatous polyp of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "255196008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672361,
+              "CONCEPT_NAME": "Adenomatous polyp of cervix (excl mucous polyp)",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10001239",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672352,
+              "CONCEPT_NAME": "Benign cervical tumor",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10048864",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672349,
+              "CONCEPT_NAME": "Benign cervical tumour",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10004246",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672350,
+              "CONCEPT_NAME": "Benign cervix uteri neoplasm NOS",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10004247",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36617530,
+              "CONCEPT_NAME": "Benign neoplasm of cervix uteri",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10004312",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 196364,
+              "CONCEPT_NAME": "Benign neoplasm of uterine cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "92056006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672362,
+              "CONCEPT_NAME": "Cervical adenomatous polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10008225",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36617531,
+              "CONCEPT_NAME": "Cervical cyst",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10008254",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 192676,
+              "CONCEPT_NAME": "Cervical intraepithelial neoplasia grade 1",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "285836003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36617532,
+              "CONCEPT_NAME": "Cervical polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10008297",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672356,
+              "CONCEPT_NAME": "Cervical uterine polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10008320",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4061209,
+              "CONCEPT_NAME": "Cervicitis with Nabothian cyst",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "198203009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36617533,
+              "CONCEPT_NAME": "Cervix adenomatous polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10008338",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36617564,
+              "CONCEPT_NAME": "Cervix cancer metastatic",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10055094",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "PT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 37103694,
+              "CONCEPT_NAME": "Cervix neoplasms",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10029109",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "HLT"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4023453,
+              "CONCEPT_NAME": "Chronic cystic cervicitis",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "19372002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4219339,
+              "CONCEPT_NAME": "Cyst of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "81956008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4108901,
+              "CONCEPT_NAME": "Embryonic cyst of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "253833001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672359,
+              "CONCEPT_NAME": "Endocervical polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10050072",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4061049,
+              "CONCEPT_NAME": "Endocervicitis with Nabothian cyst",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "198206001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672478,
+              "CONCEPT_NAME": "Lymphoepithelioma-like carcinoma of cervix metastatic",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10065593",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4283743,
+              "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from fallopian tube",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "369500009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4289386,
+              "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from ovary",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "369501008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4281162,
+              "CONCEPT_NAME": "Malignant tumor involving uterine cervix by separate metastasis from vagina",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "369574004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672357,
+              "CONCEPT_NAME": "Mucous polyp of cervix",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10028138",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672354,
+              "CONCEPT_NAME": "Nabothian cyst",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10028673",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4047648,
+              "CONCEPT_NAME": "Neoplasm of uterine cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "123841004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4280498,
+              "CONCEPT_NAME": "Polyp of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "65576009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672358,
+              "CONCEPT_NAME": "Polyp of cervix",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10036124",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672364,
+              "CONCEPT_NAME": "Polyp of cervix adenomatous",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10036125",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36672360,
+              "CONCEPT_NAME": "Portio polyp",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10066346",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "MedDRA",
+              "CONCEPT_CLASS_ID": "LLT"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Removal of IUD",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4072712,
+              "CONCEPT_NAME": "Removal of displaced intrauterine contraceptive device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "176839005",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44513457,
+              "CONCEPT_NAME": "Removal of displaced intrauterine contraceptive device NEC",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "Q12.3",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "OPCS4",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4032736,
+              "CONCEPT_NAME": "Removal of displaced intrauterine device from peritoneal cavity",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "236892008",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43020953,
+              "CONCEPT_NAME": "Removal of hormone releasing intrauterine contraceptive device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "472838002",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2008124,
+              "CONCEPT_NAME": "Removal of intrauterine contraceptive device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "97.71",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "ICD9Proc",
+              "CONCEPT_CLASS_ID": "4-dig billing code"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4074284,
+              "CONCEPT_NAME": "Removal of intrauterine contraceptive device from pouch of Douglas",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "176749004",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44512751,
+              "CONCEPT_NAME": "Removal of intrauterine contraceptive device from pouch of Douglas",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "P31.5",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "OPCS4",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44513458,
+              "CONCEPT_NAME": "Removal of intrauterine contraceptive device NEC",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "Q12.4",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "OPCS4",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4238715,
+              "CONCEPT_NAME": "Removal of intrauterine device",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "68254000",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2110195,
+              "CONCEPT_NAME": "Removal of intrauterine device (IUD)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "58301",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Cervical Cancer Screening Procedures",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 2617204,
+              "CONCEPT_NAME": "Cervical or vaginal cancer screening; pelvic and clinical breast examination",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "G0101",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40483591,
+              "CONCEPT_NAME": "Screening for Chlamydia trachomatis",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "442487003",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4062484,
+              "CONCEPT_NAME": "Screening for malignant neoplasm of cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "171149006",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4064917,
+              "CONCEPT_NAME": "Screening for malignant neoplasm of urinary system",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "171178007",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2720510,
+              "CONCEPT_NAME": "Screening papanicolaou smear, cervical or vaginal, up to three smears, by technician under physician supervision",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "P3000",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2720511,
+              "CONCEPT_NAME": "Screening papanicolaou smear, cervical or vaginal, up to three smears, requiring interpretation by physician",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "P3001",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2720580,
+              "CONCEPT_NAME": "Screening papanicolaou smear; obtaining, preparing and conveyance of cervical or vaginal smear to laboratory",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "Q0091",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "HCPCS",
+              "CONCEPT_CLASS_ID": "HCPCS"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4064354,
+              "CONCEPT_NAME": "Trachoma screening",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "171120003",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4064905,
+              "CONCEPT_NAME": "Venereal disease screening",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "171128005",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Cervarix",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 45632264,
+              "CONCEPT_NAME": "CERVARIX - human papillomavirus bivalent (types 16 and 18) vaccine, recombinant injection, suspension",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "45cb7763-d003-4b66-86eb-4b2123e0874d",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "SPL",
+              "CONCEPT_CLASS_ID": "Vaccine"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "name": "HIV lab test result",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 40760007,
+              "CONCEPT_NAME": "HIV 1+2 Ab+HIV1 p24 Ag [Presence] in Serum or Plasma by Immunoassay",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "56888-1",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Gonorrhea RNA unspecified specimen",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 3010854,
+              "CONCEPT_NAME": "Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "5028-6",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Chlamydia RNA in Unspecified Specimen",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 3009926,
+              "CONCEPT_NAME": "Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "4993-2",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Hepatitis C test result",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 3017143,
+              "CONCEPT_NAME": "Hepatitis C virus Ab [Presence] in Serum",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "16128-1",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Mirena IUS",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 19132303,
+              "CONCEPT_NAME": "Levonorgestrel 0.000833 MG/HR [Mirena]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "807282",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug Comp"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19132304,
+              "CONCEPT_NAME": "Levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "807283",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1718403,
+              "CONCEPT_NAME": "Levonorgestrel Intrauterine System [Mirena]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1856528",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug Form"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "HPV Positive Condition",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 443430,
+              "CONCEPT_NAME": "HPV - Human papillomavirus test positive",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "391147004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Smoker Observations",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4276526,
+              "CONCEPT_NAME": "Cigarette smoker",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "65568007",
+              "DOMAIN_ID": "Observation",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4275495,
+              "CONCEPT_NAME": "Tobacco smoking behavior - finding",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "365981007",
+              "DOMAIN_ID": "Observation",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Cigarette Smoker Observation",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4276526,
+              "CONCEPT_NAME": "Cigarette smoker",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "65568007",
+              "DOMAIN_ID": "Observation",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Tobacco smoker observation",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4275495,
+              "CONCEPT_NAME": "Tobacco smoking behavior - finding",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "365981007",
+              "DOMAIN_ID": "Observation",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "High risk HPV diagnosis",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 36717114,
+              "CONCEPT_NAME": "Human papillomavirus deoxyribonucleic acid test positive, high risk on cervical specimen",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "720005005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "CIN grade two or three",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 194611,
+              "CONCEPT_NAME": "Carcinoma in situ of uterine cervix",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "92564006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 196165,
+              "CONCEPT_NAME": "Cervical intraepithelial neoplasia grade 2",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "285838002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "name": "Mirena or Liletta",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 46221626,
+              "CONCEPT_NAME": "Levonorgestrel 0.000775 MG/HR Intrauterine System [Liletta]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1605257",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19131647,
+              "CONCEPT_NAME": "Levonorgestrel 0.000833 MG/HR Intrauterine System",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "804156",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19132304,
+              "CONCEPT_NAME": "Levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "807283",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "name": "Skyla or Kyleena",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 43012751,
+              "CONCEPT_NAME": "Levonorgestrel 0.000583 MG/HR Intrauterine System [Skyla]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1366339",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1718412,
+              "CONCEPT_NAME": "Levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1856546",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ProcedureOccurrence": {
+          "CodesetId": 0,
+          "OccurrenceStartDate": {
+            "Value": "2003-01-01",
+            "Op": "gte"
+          },
+          "First": true
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": 365,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "First"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "First"
+  },
+  "InclusionRules": [
+    {
+      "name": "No Prior Replacement",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "ProcedureOccurrence": {
+                "CodesetId": 3
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 1,
+                "Coeff": -1
+              }
+            },
+            "Occurrence": {
+              "Type": 0,
+              "Count": 0
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "No Prior IUD Observation",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "Observation": {
+                "CodesetId": 1
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 1,
+                "Coeff": -1
+              }
+            },
+            "Occurrence": {
+              "Type": 0,
+              "Count": 0
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "Age",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [],
+        "DemographicCriteriaList": [
+          {
+            "Age": {
+              "Value": 45,
+              "Op": "lte"
+            }
+          }
+        ],
+        "Groups": []
+      }
+    },
+    {
+      "name": "Gender",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [],
+        "DemographicCriteriaList": [
+          {
+            "Gender": [
+              {
+                "CONCEPT_CODE": "703118005",
+                "CONCEPT_ID": 45766035,
+                "CONCEPT_NAME": "Feminine gender",
+                "DOMAIN_ID": "Gender",
+                "VOCABULARY_ID": "SNOMED"
+              },
+              {
+                "CONCEPT_CODE": "F",
+                "CONCEPT_ID": 8532,
+                "CONCEPT_NAME": "FEMALE",
+                "DOMAIN_ID": "Gender",
+                "VOCABULARY_ID": "Gender"
+              }
+            ]
+          }
+        ],
+        "Groups": []
+      }
+    },
+    {
+      "name": "Levonorgestrel IUD",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "DrugExposure": {
+                "CodesetId": 13
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": 1
+              },
+              "End": {
+                "Coeff": 1
+              }
+            },
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "No Prior Endometrial or Cervical Neoplasm",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "ConditionOccurrence": {
+                "CodesetId": 16
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              }
+            },
+            "Occurrence": {
+              "Type": 0,
+              "Count": 0
+            }
+          },
+          {
+            "Criteria": {
+              "ConditionOccurrence": {
+                "CodesetId": 17
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              }
+            },
+            "Occurrence": {
+              "Type": 0,
+              "Count": 0
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "Skyla or Kyleena",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "DrugExposure": {
+                "CodesetId": 40
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": 1
+              },
+              "End": {
+                "Coeff": 1
+              }
+            },
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    }
+  ],
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {}
+}
