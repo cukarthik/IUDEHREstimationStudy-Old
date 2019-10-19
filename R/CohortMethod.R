@@ -231,7 +231,7 @@ runCohortCharacterization <- function(connectionDetails,
   
   covariateData2 <- FeatureExtraction::getDbCovariateData(connectionDetails = connectionDetails,
                                        cdmDatabaseSchema = cdmDatabaseSchema,
-                                       cohortDatabaseSchema = resultsDatabaseSchema,
+                                       cohortDatabaseSchema = cohortDatabaseSchema,
                                        cohortTable = cohortTable,
                                        cohortId = cohortId,
                                        covariateSettings = covariateSettings,
