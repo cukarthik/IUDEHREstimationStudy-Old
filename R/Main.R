@@ -144,7 +144,27 @@ execute <- function(connectionDetails,
                                 outputFolder,
                                 maxCores)
     }
+    
+    #calculate cumulative incidence for Cu and LNG
+    calculateCumulativeIncidence(connectionDetails,
+                                 cdmDatabaseSchema,
+                                 cohortDatabaseSchema,
+                                 cohortTable,
+                                 oracleTempSchema,
+                                 1771647, #Cu-IUD
+                                 1771054, #Alt High Grade Cervical Neoplasm
+                                 outputFolder,
+                                 maxCores)
       
+    calculateCumulativeIncidence(connectionDetails,
+                                 cdmDatabaseSchema,
+                                 cohortDatabaseSchema,
+                                 cohortTable,
+                                 oracleTempSchema,
+                                 1771648, #LNG-IUS
+                                 1771054, #Alt High Grade Cervical Neoplasm
+                                 outputFolder,
+                                 maxCores)
   }
   
   if (runDiagnostics) {
