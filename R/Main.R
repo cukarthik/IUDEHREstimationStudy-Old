@@ -164,6 +164,13 @@ execute <- function(connectionDetails,
                                  1771054, #Alt High Grade Cervical Neoplasm
                                  outputFolder,
                                  maxCores)
+    
+    calculatePerYearCohortInclusion(connectionDetails,
+                                    cohortDatabaseSchema,
+                                    cohortTable,
+                                    oracleTempSchema,
+                                    outputFolder,
+                                    maxCores)
   }
   
   if (runDiagnostics) {

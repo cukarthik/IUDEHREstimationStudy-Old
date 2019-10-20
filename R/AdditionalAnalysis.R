@@ -76,11 +76,11 @@ calculateCumulativeIncidence <- function(connectionDetails,
 
 #Retrieves and writes yearly inclusion counts for all cohorts
 calculatePerYearCohortInclusion <- function(connectionDetails,
-                                                     cohortDatabaseSchema,
-                                                     cohortTable,
-                                                     oracleTempSchema,
-                                                     outputFolder,
-                                                     maxCores) {
+                                            cohortDatabaseSchema,
+                                            cohortTable,
+                                            oracleTempSchema,
+                                            outputFolder,
+                                            maxCores) {
   
   sql <- SqlRender::loadRenderTranslateSql("GetCountsPerYear.sql",
                                            "IUDCLW",
