@@ -145,9 +145,9 @@ execute <- function(connectionDetails,
                                 maxCores)
     }
     
+    ParallelLogger::logInfo("Calculating cumulative incidence...")
     #calculate cumulative incidence for Cu and LNG
     calculateCumulativeIncidence(connectionDetails,
-                                 cdmDatabaseSchema,
                                  cohortDatabaseSchema,
                                  cohortTable,
                                  oracleTempSchema,
@@ -157,7 +157,6 @@ execute <- function(connectionDetails,
                                  maxCores)
       
     calculateCumulativeIncidence(connectionDetails,
-                                 cdmDatabaseSchema,
                                  cohortDatabaseSchema,
                                  cohortTable,
                                  oracleTempSchema,

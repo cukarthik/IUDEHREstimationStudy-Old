@@ -51,7 +51,6 @@ runCohortCharacterization <- function(connectionDetails,
 }
 
 calculateCumulativeIncidence <- function(connectionDetails,
-                                         cdmDatabaseSchema,
                                          cohortDatabaseSchema,
                                          cohortTable,
                                          oracleTempSchema,
@@ -63,7 +62,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
   sql <- SqlRender::loadRenderTranslateSql("CumulativeIncidence.sql",
                                            "IUDCLW",
                                            dbms = connectionDetails$dbms,
-                                           target_database_schema = cdmDatabaseSchema,
+                                           target_database_schema = cohortDatabaseSchema,
                                            study_cohort_table = cohortTable,
                                            outcome_cohort = outcomeCohortId,
                                            target_cohort = targetCohortId,
@@ -75,3 +74,23 @@ calculateCumulativeIncidence <- function(connectionDetails,
   
 }
 
+#Retrieves and writes yearly inclusion counts for all cohorts
+calculatePerYearCohortInclusion <- function(connectionDetails,
+                                                     cohortDatabaseSchema,
+                                                     cohortTable,
+                                                     oracleTempSchema,
+                                                     outputFolder,
+                                                     maxCores) {
+  
+  sql <- SqlRender::loadRenderTranslateSql("GetCountsPerYear.sql",
+                                           "IUDCLW",
+                                           dbms = connectionDetails$dbms,
+                                           target_database_schema = cohortDatabaseSchema,
+                                           study_cohort_table = cohortTable,
+                                           oracleTempSchema = oracleTempSchema)
+  
+  counts <- DatabaseConnector::executeSql(conn, sql)
+  output <- file.path(outputFolder, paste0(cohortId,"_cohort_counts_per_year.csv"))
+  write.table(counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
+  
+}
