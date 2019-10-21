@@ -90,7 +90,7 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                            oracleTempSchema = oracleTempSchema)
   
   counts <- DatabaseConnector::executeSql(conn, sql)
-  output <- file.path(outputFolder, paste0(cohortId,"_cohort_counts_per_year.csv"))
+  output <- file.path(outputFolder, "cohort_counts_per_year.csv")
   write.table(counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
 }
