@@ -70,8 +70,8 @@ calculateCumulativeIncidence <- function(connectionDetails,
   
   cumlativeIncidence <- DatabaseConnector::executeSql(conn, sql)
   output <- file.path(outputFolder, paste0(targetCohortId, "_", outcome_cohort,"_cumlativeIncidence.csv"))
-  write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
-  
+  write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, overwrite=TRUE)
+
 }
 
 #Retrieves and writes yearly inclusion counts for all cohorts
