@@ -35,7 +35,7 @@ How to run
 	install_github("ohdsi/SqlRender", args = "--no-multiarch")
 	```
 	
-	OR for all install, one can try:
+	OR for all installs, one can try:
 	
 	```r
 	options(devtools.install.args = "--no-multiarch")
@@ -61,7 +61,7 @@ How to run
 	maxCores <- parallel::detectCores()
 	
 	# Minimum cell count when exporting data:
-	minCellCount <- 5
+	minCellCount <- 10
 	
 	# The folder where the study intermediate and result files will be written:
 	outputFolder <- "c:/IUDCLW"
