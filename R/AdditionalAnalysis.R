@@ -69,7 +69,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                            oracleTempSchema = oracleTempSchema)
   
   cumlativeIncidence <- DatabaseConnector::executeSql(conn, sql)
-  output <- file.path(outputFolder, paste0(targetCohortId, "_", outcome_cohort,"_cumlativeIncidence.csv"))
+  output <- file.path(outputFolder, paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
   write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, append=FALSE)
 
 }
