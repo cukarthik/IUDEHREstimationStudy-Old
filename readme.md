@@ -35,6 +35,12 @@ How to run
 	install_github("ohdsi/SqlRender", args = "--no-multiarch")
 	```
 	
+	OR for all install, one can try:
+	
+	```r
+	options(devtools.install.args = "--no-multiarch")
+	```
+	
 	Alternatively, ensure that you have installed both 32-bit and 64-bit JDK versions, as mentioned in the [video tutorial](https://youtu.be/K9_0s2Rchbo).
 	
 2. In `R`, use the following `devtools` command to install the IUDCLW package:
