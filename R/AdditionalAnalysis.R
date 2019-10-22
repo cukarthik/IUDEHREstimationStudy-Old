@@ -88,7 +88,7 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                            target_database_schema = cohortDatabaseSchema,
                                            study_cohort_table = cohortTable,
                                            oracleTempSchema = oracleTempSchema)
-  
+  conn <- connect(connectionDetails)
   counts <- DatabaseConnector::executeSql(conn, sql)
   filtered_counts <- subset(counts, person_count>minCellCount)
   
