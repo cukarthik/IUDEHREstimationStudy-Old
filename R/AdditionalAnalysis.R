@@ -80,7 +80,8 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                             cohortTable,
                                             oracleTempSchema,
                                             outputFolder,
-                                            maxCores) {
+                                            maxCores,
+                                            minCellCount) {
   
   sql <- SqlRender::loadRenderTranslateSql("GetCountsPerYear.sql",
                                            "IUDCLW",
@@ -90,7 +91,9 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                            oracleTempSchema = oracleTempSchema)
   
   counts <- DatabaseConnector::executeSql(conn, sql)
+  filtered_counts <- subset(counts, person_count>minCellCount)
+  
   output <- file.path(outputFolder, "cohort_counts_per_year.csv")
-  write.table(counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
+  write.table(filtered_counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
 }
