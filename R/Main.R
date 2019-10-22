@@ -145,7 +145,7 @@ execute <- function(connectionDetails,
                                 maxCores)
     }
     
-    ParallelLogger::logInfo("Calculating cumulative incidence...")
+    ParallelLogger::logInfo("Calculating cumulative incidence for Cu...")
     #calculate cumulative incidence for Cu and LNG
     calculateCumulativeIncidence(connectionDetails,
                                  cohortDatabaseSchema,
@@ -156,6 +156,7 @@ execute <- function(connectionDetails,
                                  outputFolder,
                                  maxCores)
       
+    ParallelLogger::logInfo("Calculating cumulative incidence for LNG...")
     calculateCumulativeIncidence(connectionDetails,
                                  cohortDatabaseSchema,
                                  cohortTable,
@@ -165,12 +166,14 @@ execute <- function(connectionDetails,
                                  outputFolder,
                                  maxCores)
     
+    ParallelLogger::logInfo("Calculating cohort inclusion per year...")
     calculatePerYearCohortInclusion(connectionDetails,
                                     cohortDatabaseSchema,
                                     cohortTable,
                                     oracleTempSchema,
                                     outputFolder,
-                                    maxCores)
+                                    maxCores,
+                                    minCellCount)
   }
   
   if (runDiagnostics) {

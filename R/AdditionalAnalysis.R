@@ -59,6 +59,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                          outputFolder,
                                          maxCores) {
 
+  conn <- connect(connectionDetails)
   sql <- SqlRender::loadRenderTranslateSql("CumulativeIncidence.sql",
                                            "IUDCLW",
                                            dbms = connectionDetails$dbms,
@@ -67,11 +68,9 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                            outcome_cohort = outcomeCohortId,
                                            target_cohort = targetCohortId,
                                            oracleTempSchema = oracleTempSchema)
-  
   cumlativeIncidence <- DatabaseConnector::executeSql(conn, sql)
   output <- file.path(outputFolder, paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
   write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, append=FALSE)
-
 }
 
 #Retrieves and writes yearly inclusion counts for all cohorts
@@ -80,7 +79,8 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                             cohortTable,
                                             oracleTempSchema,
                                             outputFolder,
-                                            maxCores) {
+                                            maxCores,
+                                            minCellCount) {
   
   sql <- SqlRender::loadRenderTranslateSql("GetCountsPerYear.sql",
                                            "IUDCLW",
@@ -90,7 +90,9 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                            oracleTempSchema = oracleTempSchema)
   
   counts <- DatabaseConnector::executeSql(conn, sql)
+  filtered_counts <- subset(counts, person_count>minCellCount)
+  
   output <- file.path(outputFolder, "cohort_counts_per_year.csv")
-  write.table(counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
+  write.table(filtered_counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
 }
