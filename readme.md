@@ -29,10 +29,11 @@ How to run
 	install_github("ohdsi/MethodEvaluation", ref = "v1.0.2")
 	```
 
-	If you experience problems on Windows where rJava can't find Java, one solution may be to add `args = "--no-multiarch"` to each `install_github` call, for example:
+	If you experience problems on Windows where rJava can't find Java, one solution may be to add `"--no-multiarch"` to each `install_github` call, for example these are two ways to ignore the i386 architecture:
 	
 	```r
 	install_github("ohdsi/SqlRender", args = "--no-multiarch")
+	install_github("ohdsi/SqlRender", INSTALL_opts=c("--no-multiarch"))
 	```
 	
 	OR for all installs, one can try:
