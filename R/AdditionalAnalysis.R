@@ -59,7 +59,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                          outputFolder,
                                          maxCores) {
 
-  conn <- connect(connectionDetails)
+  conn <- DatabaseConnector::connect(connectionDetails)
   sql <- SqlRender::loadRenderTranslateSql("CumulativeIncidence.sql",
                                            "IUDCLW",
                                            dbms = connectionDetails$dbms,
@@ -68,7 +68,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                            outcome_cohort = outcomeCohortId,
                                            target_cohort = targetCohortId,
                                            oracleTempSchema = oracleTempSchema)
-  cumlativeIncidence <- DatabaseConnector::executeSql(conn, sql)
+  cumlativeIncidence <- DatabaseConnector::querySql(conn, sql)
   output <- file.path(outputFolder, paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
   write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, append=FALSE)
 }
@@ -88,10 +88,10 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                            target_database_schema = cohortDatabaseSchema,
                                            study_cohort_table = cohortTable,
                                            oracleTempSchema = oracleTempSchema)
-  conn <- connect(connectionDetails)
-  counts <- DatabaseConnector::executeSql(conn, sql)
-  filtered_counts <- subset(counts, person_count>minCellCount)
-  
+  conn <- DatabaseConnector::connect(connectionDetails)
+  counts <- DatabaseConnector::querySql(conn, sql)
+  filtered_counts <- counts[counts["PERSON_COUNT"]>minCellCount,]
+
   output <- file.path(outputFolder, "cohort_counts_per_year.csv")
   write.table(filtered_counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
