@@ -2,7 +2,7 @@
 {DEFAULT @study_cohort_table = "cohort"}
 
 SELECT cohort1.subject_id,
-	DATEDIFF(day, cohort1.cohort_start_date, observation_period_end_date) AS time_to_obs_end,
+	DATEDIFF(day, cohort1.cohort_start_date, cohort1.observation_period_end_date) AS time_to_obs_end,
 	CASE 
 		WHEN cohort2.subject_id IS NOT NULL THEN DATEDIFF(day, cohort1.cohort_start_date, cohort2.cohort_start_date)
 		ELSE -1
