@@ -149,6 +149,7 @@ execute <- function(connectionDetails,
     #calculate cumulative incidence for Cu and LNG
     calculateCumulativeIncidence(connectionDetails,
                                  cohortDatabaseSchema,
+                                 cdmDatabaseSchema,
                                  cohortTable,
                                  oracleTempSchema,
                                  1771647, #Cu-IUD
@@ -159,6 +160,7 @@ execute <- function(connectionDetails,
     ParallelLogger::logInfo("Calculating cumulative incidence for LNG...")
     calculateCumulativeIncidence(connectionDetails,
                                  cohortDatabaseSchema,
+                                 cdmDatabaseSchema,
                                  cohortTable,
                                  oracleTempSchema,
                                  1771648, #LNG-IUS
