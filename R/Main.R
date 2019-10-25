@@ -141,8 +141,7 @@ execute <- function(connectionDetails,
                                 cohortTable,
                                 oracleTempSchema,
                                 cohortsToCreate$cohortId[i],
-                                outputFolder,
-                                maxCores)
+                                outputFolder)
     }
     
     ParallelLogger::logInfo("Calculating cumulative incidence for Cu...")
@@ -154,8 +153,7 @@ execute <- function(connectionDetails,
                                  oracleTempSchema,
                                  1771647, #Cu-IUD
                                  1771054, #Alt High Grade Cervical Neoplasm
-                                 outputFolder,
-                                 maxCores)
+                                 outputFolder)
       
     ParallelLogger::logInfo("Calculating cumulative incidence for LNG...")
     calculateCumulativeIncidence(connectionDetails,
@@ -165,8 +163,7 @@ execute <- function(connectionDetails,
                                  oracleTempSchema,
                                  1771648, #LNG-IUS
                                  1771054, #Alt High Grade Cervical Neoplasm
-                                 outputFolder,
-                                 maxCores)
+                                 outputFolder)
     
     ParallelLogger::logInfo("Calculating cohort inclusion per year...")
     calculatePerYearCohortInclusion(connectionDetails,
@@ -174,7 +171,6 @@ execute <- function(connectionDetails,
                                     cohortTable,
                                     oracleTempSchema,
                                     outputFolder,
-                                    maxCores,
                                     minCellCount)
   }
   

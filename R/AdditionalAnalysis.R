@@ -20,8 +20,6 @@
 #' @param outputFolder         Name of local folder where the results were generated; make sure to use forward slashes
 #'                             (/). Do not use a folder on a network drive since this greatly impacts
 #'                             performance.
-#' @param maxCores             How many parallel cores should be used? If more cores are made available
-#'                             this can speed up the analyses.
 #'
 #' @export
 runCohortCharacterization <- function(connectionDetails,
@@ -30,8 +28,7 @@ runCohortCharacterization <- function(connectionDetails,
                                       cohortTable,
                                       oracleTempSchema,
                                       cohortId,
-                                      outputFolder,
-                                      maxCores) {
+                                      outputFolder) {
   
   covariateSettings <- FeatureExtraction::createDefaultCovariateSettings()
   
@@ -57,8 +54,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                          oracleTempSchema,
                                          targetCohortId,
                                          outcomeCohortId,
-                                         outputFolder,
-                                         maxCores) {
+                                         outputFolder) {
 
   conn <- DatabaseConnector::connect(connectionDetails)
   sql <- SqlRender::loadRenderTranslateSql("CumulativeIncidence.sql",
@@ -81,7 +77,6 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
                                             cohortTable,
                                             oracleTempSchema,
                                             outputFolder,
-                                            maxCores,
                                             minCellCount) {
   
   sql <- SqlRender::loadRenderTranslateSql("GetCountsPerYear.sql",
