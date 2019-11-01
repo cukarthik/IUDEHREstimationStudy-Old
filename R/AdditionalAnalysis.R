@@ -31,6 +31,7 @@ runCohortCharacterization <- function(connectionDetails,
                                       outputFolder) {
   
   covariateSettings <- FeatureExtraction::createDefaultCovariateSettings()
+  covariateSettings$DemographicsAge <- TRUE
   
   covariateData2 <- FeatureExtraction::getDbCovariateData(connectionDetails = connectionDetails,
                                                           cdmDatabaseSchema = cdmDatabaseSchema,
@@ -40,12 +41,19 @@ runCohortCharacterization <- function(connectionDetails,
                                                           covariateSettings = covariateSettings,
                                                           aggregated = TRUE)
   summary(covariateData2)
-  result <- FeatureExtraction::createTable1(covariateData2)
+  result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs()  )
 #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
   print(result, row.names = FALSE, right = FALSE)
   write.csv(result, file.path(outputFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
-  
 }
+
+getCustomizeTable1Specs <- function() {
+  s <- FeatureExtraction::getDefaultTable1Specifications()
+  appendedTable1Spec <- rbind(s, c("Age", 2,"")) # Add Age as a continuous variable to table1
+  return(appendedTable1Spec)
+}
+
+  
 
 calculateCumulativeIncidence <- function(connectionDetails,
                                          cohortDatabaseSchema,
