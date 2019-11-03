@@ -31,7 +31,8 @@ runCohortCharacterization <- function(connectionDetails,
                                       outputFolder) {
   
   covariateSettings <- FeatureExtraction::createDefaultCovariateSettings()
-  covariateSettings$DemographicsAge <- TRUE
+  covariateSettings$DemographicsAge <- TRUE # Need to Age (Median, IQR)
+  covariateSettings$useDemographicsPostObservationTime <- TRUE # Need to calculate Person-Year Observation post index date (Median, IQR)
   
   covariateData2 <- FeatureExtraction::getDbCovariateData(connectionDetails = connectionDetails,
                                                           cdmDatabaseSchema = cdmDatabaseSchema,
@@ -50,6 +51,7 @@ runCohortCharacterization <- function(connectionDetails,
 getCustomizeTable1Specs <- function() {
   s <- FeatureExtraction::getDefaultTable1Specifications()
   appendedTable1Spec <- rbind(s, c("Age", 2,"")) # Add Age as a continuous variable to table1
+  appendedTable1Spec <- rbind(appendedTable1Spec, c("PostObservationTime", 9,"")) # Add Observation post index date
   return(appendedTable1Spec)
 }
 
