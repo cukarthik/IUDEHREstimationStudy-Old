@@ -132,16 +132,27 @@ execute <- function(connectionDetails,
                     maxCores = maxCores)
     
     pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "IUDCLW")
+    cohortCounts <- read.csv(file.path(outputFolder, "CohortCounts.csv")) #get the cohort counts from earlier when cohorts are created
     cohortsToCreate <- read.csv(pathToCsv)
     for (i in 1:nrow(cohortsToCreate)) {
-      ParallelLogger::logInfo(paste("Running Cohort Characterization for", cohortsToCreate$name[i]))
-      runCohortCharacterization(connectionDetails,
-                                cdmDatabaseSchema,
-                                cohortDatabaseSchema,
-                                cohortTable,
-                                oracleTempSchema,
-                                cohortsToCreate$cohortId[i],
-                                outputFolder)
+      index <- grep(cohortsToCreate$cohortId[i], cohortCounts$cohortDefinitionId)
+      if (index==0) {
+        stop(paste0("ERROR: Trying to characterize a cohort that was not created! CohortID --> ", cohortsToCreate$cohortId[i], " Cohort Name --> ", cohortsToCreate$name[i]))
+      } else {
+        if (cohortCounts$personCount[index] < minCellCount) {
+          ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[i], " low cell count."))  
+        } else {
+          
+          ParallelLogger::logInfo(paste("Running Cohort Characterization for", cohortsToCreate$name[i]))
+          runCohortCharacterization(connectionDetails,
+                                    cdmDatabaseSchema,
+                                    cohortDatabaseSchema,
+                                    cohortTable,
+                                    oracleTempSchema,
+                                    cohortsToCreate$cohortId[i],
+                                    outputFolder)
+        }
+      }
     }
     
     ParallelLogger::logInfo("Calculating cumulative incidence for Cu...")
