@@ -28,24 +28,40 @@ runCohortCharacterization <- function(connectionDetails,
                                       cohortTable,
                                       oracleTempSchema,
                                       cohortId,
-                                      outputFolder) {
+                                      outputFolder,
+                                      cohortCounts, 
+                                      minCellCount) {
   
-  covariateSettings <- FeatureExtraction::createDefaultCovariateSettings()
-  covariateSettings$DemographicsAge <- TRUE # Need to Age (Median, IQR)
-  covariateSettings$DemographicsPostObservationTime <- TRUE # Need to calculate Person-Year Observation post index date (Median, IQR)
+  index <- grep(cohortsToCreate$cohortId[i], cohortCounts$cohortDefinitionId)
+  if (length(index)==0) {
+    
+    ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[i], " becasue of no count."))  
+#    stop(paste0("ERROR: Trying to characterize a cohort that was not created! CohortID --> ", cohortsToCreate$cohortId[i], " Cohort Name --> ", cohortsToCreate$name[i]))
   
-  covariateData2 <- FeatureExtraction::getDbCovariateData(connectionDetails = connectionDetails,
-                                                          cdmDatabaseSchema = cdmDatabaseSchema,
-                                                          cohortDatabaseSchema = cohortDatabaseSchema,
-                                                          cohortTable = cohortTable,
-                                                          cohortId = cohortId,
-                                                          covariateSettings = covariateSettings,
-                                                          aggregated = TRUE)
-  summary(covariateData2)
-  result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs()  )
-#  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
-  print(result, row.names = FALSE, right = FALSE)
-  write.csv(result, file.path(outputFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
+  } else if (cohortCounts$personCount[index] < minCellCount) {
+     
+      ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[i], " low cell count."))  
+  
+  } else {
+    
+    covariateSettings <- FeatureExtraction::createDefaultCovariateSettings()
+    covariateSettings$DemographicsAge <- TRUE # Need to Age (Median, IQR)
+    covariateSettings$DemographicsPostObservationTime <- TRUE # Need to calculate Person-Year Observation post index date (Median, IQR)
+    
+    covariateData2 <- FeatureExtraction::getDbCovariateData(connectionDetails = connectionDetails,
+                                                            cdmDatabaseSchema = cdmDatabaseSchema,
+                                                            cohortDatabaseSchema = cohortDatabaseSchema,
+                                                            cohortTable = cohortTable,
+                                                            cohortId = cohortId,
+                                                            covariateSettings = covariateSettings,
+                                                            aggregated = TRUE)
+    summary(covariateData2)
+    result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs()  )
+    #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
+    print(result, row.names = FALSE, right = FALSE)
+    write.csv(result, file.path(outputFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
+    
+  }
 }
 
 getCustomizeTable1Specs <- function() {
