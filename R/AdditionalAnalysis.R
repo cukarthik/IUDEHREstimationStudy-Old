@@ -56,7 +56,7 @@ runCohortCharacterization <- function(connectionDetails,
                                                             covariateSettings = covariateSettings,
                                                             aggregated = TRUE)
     summary(covariateData2)
-    result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs()  )
+    result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs(), output = "one column"  )
     #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
     print(result, row.names = FALSE, right = FALSE)
     write.csv(result, file.path(outputFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
