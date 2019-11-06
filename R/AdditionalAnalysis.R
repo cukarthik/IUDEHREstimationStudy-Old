@@ -59,9 +59,14 @@ runCohortCharacterization <- function(connectionDetails,
     result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs()  )
     #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
     print(result, row.names = FALSE, right = FALSE)
-    write.csv(result, file.path(outputFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
+    write.csv(result, file.path(outputFolder, "additional_analysis", paste0(cohortId,"_table1.csv")), row.names = FALSE)
     
   }
+}
+
+# Moves all table1, cumulative incidence, and filtered cohortCounts to the export folder
+copyAdditionalFilesToExportFolder() <- function() {
+  
 }
 
 getCustomizeTable1Specs <- function() {
@@ -93,7 +98,7 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                            target_cohort = targetCohortId,
                                            oracleTempSchema = oracleTempSchema)
   cumlativeIncidence <- DatabaseConnector::querySql(conn, sql)
-  output <- file.path(outputFolder, paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
+  output <- file.path(outputFolder, "additional_analysis", paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
   write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, append=FALSE)
 }
 
@@ -115,7 +120,7 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
   counts <- DatabaseConnector::querySql(conn, sql)
   filtered_counts <- counts[counts["PERSON_COUNT"]>minCellCount,]
 
-  output <- file.path(outputFolder, "cohort_counts_per_year.csv")
+  output <- file.path(outputFolder, "additional_analysis", "cohort_counts_per_year.csv")
   write.table(filtered_counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
 }
