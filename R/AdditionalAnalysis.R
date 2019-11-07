@@ -1,7 +1,9 @@
-#' Run CohortMethod package
+additionalAnalysisFolder <- "additional_analysis"
+
+#' Run AdditionalAnalysis package
 #'
 #' @details
-#' Run the CohortMethod package, which implements the comparative cohort design.
+#' Run the AdditionalAnalysis package, which implements additional analysis for the IUD Study.
 #'
 #' @param connectionDetails    An object of type \code{connectionDetails} as created using the
 #'                             \code{\link[DatabaseConnector]{createConnectionDetails}} function in the
@@ -59,14 +61,36 @@ runCohortCharacterization <- function(connectionDetails,
     result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs(), output = "one column"  )
     #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
     print(result, row.names = FALSE, right = FALSE)
-    write.csv(result, file.path(outputFolder, "additional_analysis", paste0(cohortId,"_table1.csv")), row.names = FALSE)
+    write.csv(result, file.path(outputFolder, additionalAnalysisFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
     
   }
 }
 
 # Moves all table1, cumulative incidence, and filtered cohortCounts to the export folder
-copyAdditionalFilesToExportFolder() <- function() {
+copyAdditionalFilesToExportFolder <- function(outputFolder, 
+                                              cohortCounts,
+                                              minCellCount) {
+  #copy table1, cumlative incidence, and cohort counts per year files
+  filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), pattern="_table1|cumlativeIncidence|per_year")
+
+    # copy the files to export folder
+  exportFolder <- file.path(outputFolder, "export")
+  if (!file.exists(exportFolder)) {
+    dir.create(exportFolder, recursive = TRUE)
+  }
+  file.copy(filesToCopy, file.path(outputFolder, "export"))
   
+  #filter the cohort counts for counts greater than minCellCount
+  for (row in 1:nrow(cohortCounts)) {
+    pc <- cohortCounts[row, "personCount"]
+
+    if(pc < minCellCount) {
+      print(paste("Cohort count is less than ", minCellCount ," --> ", pc))
+      cohortCounts[row, "personCount"] <- paste0("<", minCellCount)
+      cohortCounts[row, "cohortCount"] <- paste0("<", minCellCount)
+    }
+  }  
+  write.csv(cohortCounts, file.path(exportFolder, "FilteredCohortCounts.csv"), row.names = FALSE)
 }
 
 getCustomizeTable1Specs <- function() {

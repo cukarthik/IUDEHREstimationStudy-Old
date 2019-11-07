@@ -176,6 +176,11 @@ execute <- function(connectionDetails,
                                     oracleTempSchema,
                                     outputFolder,
                                     minCellCount)
+    
+    ParallelLogger::logInfo("Copying additional analysis files to export...")
+    copyAdditionalFilesToExportFolder(outputFolder, 
+                                      cohortCounts,
+                                      minCellCount)
   }
   
   if (runDiagnostics) {
