@@ -61,6 +61,10 @@ runCohortCharacterization <- function(connectionDetails,
     result <- FeatureExtraction::createTable1(covariateData2, specifications = getCustomizeTable1Specs(), output = "one column"  )
     #  FeatureExtraction::saveCovariateData(covariateData2, file.path(outputFolder,paste0(cohortId,"_covariates")))
     print(result, row.names = FALSE, right = FALSE)
+    analysisFolder <- file.path(outputFolder, additionalAnalysisFolder)
+    if (!file.exists(analysisFolder)) {
+      dir.create(analysisFolder, recursive = TRUE)
+    }
     write.csv(result, file.path(outputFolder, additionalAnalysisFolder, paste0(cohortId,"_table1.csv")), row.names = FALSE)
     
   }
@@ -90,6 +94,10 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
       cohortCounts[row, "cohortCount"] <- paste0("<", minCellCount)
     }
   }  
+  analysisFolder <- file.path(outputFolder, additionalAnalysisFolder)
+  if (!file.exists(analysisFolder)) {
+    dir.create(analysisFolder, recursive = TRUE)
+  }
   write.csv(cohortCounts, file.path(exportFolder, "FilteredCohortCounts.csv"), row.names = FALSE)
 }
 
@@ -122,7 +130,11 @@ calculateCumulativeIncidence <- function(connectionDetails,
                                            target_cohort = targetCohortId,
                                            oracleTempSchema = oracleTempSchema)
   cumlativeIncidence <- DatabaseConnector::querySql(conn, sql)
-  output <- file.path(outputFolder, "additional_analysis", paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
+  analysisFolder <- file.path(outputFolder, additionalAnalysisFolder)
+  if (!file.exists(analysisFolder)) {
+    dir.create(analysisFolder, recursive = TRUE)
+  }
+  output <- file.path(outputFolder, additionalAnalysisFolder, paste0(targetCohortId, "_", outcomeCohortId,"_cumlativeIncidence.csv"))
   write.table(cumlativeIncidence, file=output, sep = ",", row.names=FALSE, col.names = TRUE, append=FALSE)
 }
 
@@ -144,7 +156,11 @@ calculatePerYearCohortInclusion <- function(connectionDetails,
   counts <- DatabaseConnector::querySql(conn, sql)
   filtered_counts <- counts[counts["PERSON_COUNT"]>minCellCount,]
 
-  output <- file.path(outputFolder, "additional_analysis", "cohort_counts_per_year.csv")
+  analysisFolder <- file.path(outputFolder, additionalAnalysisFolder)
+  if (!file.exists(analysisFolder)) {
+    dir.create(analysisFolder, recursive = TRUE)
+  }
+  output <- file.path(outputFolder, additionalAnalysisFolder, "cohort_counts_per_year.csv")
   write.table(filtered_counts, file=output, sep = ",", row.names=FALSE, col.names = TRUE)
   
 }
