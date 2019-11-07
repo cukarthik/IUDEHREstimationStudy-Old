@@ -75,7 +75,7 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
                                               cohortCounts,
                                               minCellCount) {
   #copy table1, cumlative incidence, and cohort counts per year files
-  filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), pattern="_table1|cumlativeIncidence|per_year")
+  filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), full.names = TRUE, pattern="_table1|cumlativeIncidence|per_year")
 
     # copy the files to export folder
   exportFolder <- file.path(outputFolder, "export")
