@@ -70,14 +70,14 @@ runCohortCharacterization <- function(connectionDetails,
   }
 }
 
-# Moves all table1, cumulative incidence, and filtered cohortCounts to the export folder
+# Moves all table1, cumulative incidence, filtered cohortCounts, and graphs from diagnostic folder to the export folder
 copyAdditionalFilesToExportFolder <- function(outputFolder, 
                                               cohortCounts,
                                               minCellCount) {
   #copy table1, cumlative incidence, and cohort counts per year files
   filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), full.names = TRUE, pattern="_table1|cumlativeIncidence|per_year")
 
-    # copy the files to export folder
+  # copy the files to export folder
   exportFolder <- file.path(outputFolder, "export")
   if (!file.exists(exportFolder)) {
     dir.create(exportFolder, recursive = TRUE)
@@ -96,14 +96,25 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
   }  
   analysisFolder <- file.path(outputFolder, additionalAnalysisFolder)
   if (!file.exists(analysisFolder)) {
-    dir.create(analysisFolder, recursive = TRUE)
+    #dir.create(analysisFolder, recursive = TRUE)
+    ParallelLogger::logInfo("Cannot copy files b/c additional analysese were not done...")
   }
-  write.csv(cohortCounts, file.path(exportFolder, "FilteredCohortCounts.csv"), row.names = FALSE)
+  write.csv(cohortCounts, file.path(exportFolder, "filtered_cohort_counts.csv"), row.names = FALSE)
+  
+  #copy the graphs from the diagnostic folder
+  filesToCopy <- list.files(path=file.path(outputFolder, "diagnostics"), full.names = TRUE, pattern=".png")
+  file.copy(filesToCopy, file.path(outputFolder, "export"))
+  
+}
+
+createKMGraphs <- function() {
+  CohortMethod::plotKaplanMeier(studyPop, targetLabel= "Cohort Name", comparatorLabel = "Cohort Name", fileName = "Kaplan Meier Plot File Path.png")
 }
 
 getCustomizeTable1Specs <- function() {
   s <- FeatureExtraction::getDefaultTable1Specifications()
   appendedTable1Spec <- rbind(s, c("Age", 2,"")) # Add Age as a continuous variable to table1
+  appendedTable1Spec <- rbind(appendedTable1Spec, c("PriorObservationTime", 8,"")) # Add Observation prior index date
   appendedTable1Spec <- rbind(appendedTable1Spec, c("PostObservationTime", 9,"")) # Add Observation post index date
   return(appendedTable1Spec)
 }
