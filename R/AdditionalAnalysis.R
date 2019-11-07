@@ -107,8 +107,15 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
   
 }
 
-createKMGraphs <- function() {
-  CohortMethod::plotKaplanMeier(studyPop, targetLabel= "Cohort Name", comparatorLabel = "Cohort Name", fileName = "Kaplan Meier Plot File Path.png")
+createKMGraphs <- function(outputFolder) {
+  x <- list.files(path=paste0(outputFolder,"/cmOutput"), pattern="_o", full.names = TRUE)
+  for (i in 1:length(x)) {
+    studyPop <- readRDS(x[i])
+    CohortMethod::plotKaplanMeier(studyPop, 
+                                  targetLabel= "Cohort Name", 
+                                  comparatorLabel = "Cohort Name", 
+                                  fileName = file.path(outputFolder,additionalAnalysisFolder,paste0("Kaplan Meier Plot File Path",i,".png")))
+  }
 }
 
 getCustomizeTable1Specs <- function() {

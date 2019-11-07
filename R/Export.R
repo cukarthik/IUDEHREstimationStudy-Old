@@ -557,9 +557,13 @@ calibrate <- function(subset, allControls) {
   }
   subset$i2 <- rep(NA, nrow(subset))
   subset <- subset[, c("targetId",
+                       "targetName",
                        "comparatorId",
+                       "comparatorName",
                        "outcomeId",
+                       "outcomeName",
                        "analysisId",
+                       "analysisDescription",
                        "rr",
                        "ci95lb",
                        "ci95ub",
@@ -580,9 +584,13 @@ calibrate <- function(subset, allControls) {
                        "calibratedLogRr",
                        "calibratedSeLogRr")]
   colnames(subset) <- c("targetId",
+                        "targetName",
                         "comparatorId",
+                        "comparatorName",
                         "outcomeId",
+                        "outcomeName",
                         "analysisId",
+                        "analysisDescription",
                         "rr",
                         "ci95Lb",
                         "ci95Ub",

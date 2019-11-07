@@ -23,4 +23,5 @@ SELECT cohort_definition_id,
 	YEAR(cohort_start_date) AS yr,
 	COUNT(DISTINCT subject_id) AS person_count
 FROM  @target_database_schema.@study_cohort_table
-GROUP BY cohort_definition_id, YEAR(cohort_start_date);
+GROUP BY cohort_definition_id, YEAR(cohort_start_date)
+ORDER BY cohort_definition_id, YEAR(cohort_start_date);

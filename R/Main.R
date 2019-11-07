@@ -177,10 +177,6 @@ execute <- function(connectionDetails,
                                     outputFolder,
                                     minCellCount)
     
-    ParallelLogger::logInfo("Copying additional analysis files to export...")
-    copyAdditionalFilesToExportFolder(outputFolder, 
-                                      cohortCounts,
-                                      minCellCount)
   }
   
   if (runDiagnostics) {
@@ -189,7 +185,12 @@ execute <- function(connectionDetails,
                         maxCores = maxCores)
   }
   
-  if (packageResults) {
+  ParallelLogger::logInfo("Copying some additional analysis and diagnostic files to export...")
+  copyAdditionalFilesToExportFolder(outputFolder, 
+                                    cohortCounts,
+                                    minCellCount)
+
+    if (packageResults) {
     ParallelLogger::logInfo("Packaging results")
     exportResults(outputFolder = outputFolder,
                   databaseId = databaseId,
