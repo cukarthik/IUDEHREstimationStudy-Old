@@ -1687,7 +1687,7 @@
   "conceptSetCrossReference": [
     {
       "targetName": "negativeControlOutcomes",
-      "conceptSetId": 1856962,
+      "conceptSetId": 1858201,
       "propertyName": "outcomeId",
       "targetIndex": 0
     },
@@ -3984,23 +3984,6 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 197607,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "266601003",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Excessive and frequent menstruation",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": false
-        },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
             "CONCEPT_ID": 72715,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "416189003",
@@ -5273,8 +5256,8 @@
           "includeDescendants": false
         }
       ]},
-      "name": "IUD CLW Negative Controls",
-      "id": 1856962
+      "name": "IUD OHDSI Negative Controls",
+      "id": 1858201
     },
     {
       "expression": {"items": [
@@ -5632,13 +5615,6 @@
       "outcomeName": "Esophagitis",
       "comparatorId": 1771648,
       "outcomeId": 30753,
-      "type": "outcome"
-    },
-    {
-      "targetId": 1771647,
-      "outcomeName": "Excessive and frequent menstruation",
-      "comparatorId": 1771648,
-      "outcomeId": 197607,
       "type": "outcome"
     },
     {
