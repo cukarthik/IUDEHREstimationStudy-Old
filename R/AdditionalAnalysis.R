@@ -31,6 +31,7 @@ runCohortCharacterization <- function(connectionDetails,
                                       oracleTempSchema,
                                       cohortId,
                                       outputFolder,
+                                      cohortsToCreate,
                                       cohortCounts, 
                                       minCellCount) {
   
@@ -75,7 +76,7 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
                                               cohortCounts,
                                               minCellCount) {
   #copy table1, cumlative incidence, and cohort counts per year files
-  filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), full.names = TRUE, pattern="_table1|cumlativeIncidence|per_year")
+  filesToCopy <- list.files(path=file.path(outputFolder, additionalAnalysisFolder), full.names = TRUE, pattern="_table1|cumlativeIncidence|per_year|Kaplan")
 
   # copy the files to export folder
   exportFolder <- file.path(outputFolder, "export")
@@ -107,17 +108,51 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
   
 }
 
-createKMGraphs <- function(outputFolder) {
-  x <- list.files(path=paste0(outputFolder,"/cmOutput"), pattern="_o", full.names = TRUE)
+createKMGraphs <- function(outputFolder, cohortsToCreate) {
+  x <- list.files(path=paste0(outputFolder,"/cmOutput"), pattern="StratPop", full.names = TRUE)
   for (i in 1:length(x)) {
     studyPop <- readRDS(x[i])
-    CohortMethod::plotKaplanMeier(studyPop, 
-                                  targetLabel= "Cohort Name", 
-                                  comparatorLabel = "Cohort Name", 
-                                  fileName = file.path(outputFolder,additionalAnalysisFolder,paste0("Kaplan Meier Plot File Path",i,".png")))
+    r <- extractParametersFromName(x[i])
+    CohortMethod::plotKaplanMeier(studyPop,
+                                  targetLabel= cohortsToCreate[cohortsToCreate$cohortId == r$target, ]$atlasName, 
+                                  comparatorLabel = cohortsToCreate[cohortsToCreate$cohortId == r$comparator, ]$atlasName, 
+                                  title = r$title,
+                                  fileName = file.path(outputFolder,additionalAnalysisFolder,paste0("Kaplan Meier Plot ",r$title,".png")))
   }
 }
 
+extractParametersFromName <- function(fileName) {
+  result <- list("target" = "", "outcome" = "", "comparator" = "", title="No Title")
+  f <- unlist(strsplit(fileName, "_"))
+  cnt <- 0 #count to determine title
+  for (i in 1:length(f)) {
+    if (startsWith(f[i],"c1")) {
+      result$comparator <- gsub(substr(f[i],2,nchar(f[i])), pattern=".rds$", replacement="")
+    } else if (startsWith(f[i],"t1")) {
+      result$target <- gsub(substr(f[i],2,nchar(f[i])), pattern=".rds$", replacement="")
+    } else if (startsWith(f[i],"o1")) {
+      result$outcome <- gsub(substr(f[i],2,nchar(f[i])), pattern=".rds$", replacement="")
+    } else if (f[i]=='s1') {
+      cnt <- cnt+1
+    } else if (f[i]=='s2') {
+      cnt <- cnt+2
+    } else if (f[i]=='s3') {
+      cnt <- cnt+4 # crude analysis
+    }
+  }
+  
+  if (cnt == 2) {
+    result$title <- "Subgroup Analysis"
+  } else if (cnt == 3) {
+    result$title <- "Matched Analysis"
+  } else if (cnt == 4) {
+    result$title <- "Stratification Analysis"
+  } else if (cnt == 5) {
+    result$title <- "Crude Analysis"
+  }
+  
+  return(result)
+}
 getCustomizeTable1Specs <- function() {
   s <- FeatureExtraction::getDefaultTable1Specifications()
   appendedTable1Spec <- rbind(s, c("Age", 2,"")) # Add Age as a continuous variable to table1

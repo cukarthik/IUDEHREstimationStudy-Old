@@ -144,7 +144,7 @@ execute <- function(connectionDetails,
                                     cohortTable,
                                     oracleTempSchema,
                                     cohortsToCreate$cohortId[i],
-                                    outputFolder,
+                                    outputFolder, cohortsToCreate,
                                     cohortCounts, minCellCount)
     }
     
@@ -177,6 +177,8 @@ execute <- function(connectionDetails,
                                     outputFolder,
                                     minCellCount)
     
+    ParallelLogger::logInfo("Create KM graphs...")
+    createKMGraphs(outputFolder, cohortsToCreate)
   }
   
   if (runDiagnostics) {
