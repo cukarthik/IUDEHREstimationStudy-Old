@@ -192,7 +192,7 @@ execute <- function(connectionDetails,
                                     cohortCounts,
                                     minCellCount)
 
-    if (packageResults) {
+  if (packageResults) {
     ParallelLogger::logInfo("Packaging results")
     exportResults(outputFolder = outputFolder,
                   databaseId = databaseId,
