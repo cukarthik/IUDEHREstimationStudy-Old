@@ -72,7 +72,7 @@ exportResults <- function(outputFolder,
   # Add all to zip file -------------------------------------------------------------------------------
   ParallelLogger::logInfo("Adding results to zip file")
   zipName <- file.path(exportFolder, paste0("Results", databaseId, ".zip"))
-  files <- list.files(exportFolder, pattern = ".*\\.csv$")
+  files <- list.files(exportFolder, pattern = ".*\\.csv$|.*\\.png$")
   oldWd <- setwd(exportFolder)
   on.exit(setwd(oldWd))
   DatabaseConnector::createZipFile(zipFile = zipName, files = files)

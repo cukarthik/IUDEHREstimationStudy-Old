@@ -110,12 +110,13 @@ copyAdditionalFilesToExportFolder <- function(outputFolder,
 
 createKMGraphs <- function(outputFolder, cohortsToCreate) {
   x <- list.files(path=paste0(outputFolder,"/cmOutput"), pattern="StratPop", full.names = TRUE)
+  cohortsToCreate$stringsAsFactors=FALSE
   for (i in 1:length(x)) {
     studyPop <- readRDS(x[i])
     r <- extractParametersFromName(x[i])
     CohortMethod::plotKaplanMeier(studyPop,
-                                  targetLabel= cohortsToCreate[cohortsToCreate$cohortId == r$target, ]$atlasName, 
-                                  comparatorLabel = cohortsToCreate[cohortsToCreate$cohortId == r$comparator, ]$atlasName, 
+                                  targetLabel= gettext(cohortsToCreate$atlasName[ which(cohortsToCreate$cohortId == r$target)]), 
+                                  comparatorLabel = gettext(cohortsToCreate$atlasName[ which(cohortsToCreate$cohortId == r$comparator)]), 
                                   title = r$title,
                                   fileName = file.path(outputFolder,additionalAnalysisFolder,paste0("Kaplan Meier Plot ",r$title,".png")))
   }
