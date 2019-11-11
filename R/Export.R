@@ -684,12 +684,17 @@ exportDiagnostics <- function(outputFolder,
                            "analysisId",
                            "interactionCovariateId",
                            "covariateId",
+                           "beforeMatchingSumTarget",
                            "beforeMatchingMeanTarget",
+                           "beforeMatchingSumComparator",
                            "beforeMatchingMeanComparator",
                            "beforeMatchingStdDiff",
+                           "afterMatchingSumTarget",
                            "afterMatchingMeanTarget",
+                           "afterMatchingSumComparator",
                            "afterMatchingMeanComparator",
-                           "afterMatchingStdDiff")]
+                           "afterMatchingStdDiff",
+                           "covariateName")]
     colnames(balance) <- c("databaseId",
                            "targetId",
                            "comparatorId",
@@ -697,12 +702,17 @@ exportDiagnostics <- function(outputFolder,
                            "analysisId",
                            "interactionCovariateId",
                            "covariateId",
+                           "targetSumBefore",
                            "targetMeanBefore",
+                           "comparatorSumBefore",
                            "comparatorMeanBefore",
                            "stdDiffBefore",
+                           "targetSumAfter",
                            "targetMeanAfter",
+                           "comparatorSumAfter",
                            "comparatorMeanAfter",
-                           "stdDiffAfter")
+                           "stdDiffAfter",
+                           "covariateName")
     balance$targetMeanBefore[is.na(balance$targetMeanBefore)] <- 0
     balance$comparatorMeanBefore[is.na(balance$comparatorMeanBefore)] <- 0
     balance$stdDiffBefore <- round(balance$stdDiffBefore, 3)
@@ -725,6 +735,27 @@ exportDiagnostics <- function(outputFolder,
                                    "comparatorMeanAfter",
                                    minCellCount/inferredComparatorAfterSize,
                                    TRUE)
+    
+    balance <- enforceMinCellValue(balance,
+                                   "targetSumBefore",
+                                   minCellCount,
+                                   TRUE)
+    
+    balance <- enforceMinCellValue(balance,
+                                   "targetSumAfter",
+                                   minCellCount,
+                                   TRUE)
+    
+    balance <- enforceMinCellValue(balance,
+                                   "comparatorSumBefore",
+                                   minCellCount,
+                                   TRUE)
+    
+    balance <- enforceMinCellValue(balance,
+                                   "comparatorSumAfter",
+                                   minCellCount,
+                                   TRUE)
+    
     balance$targetMeanBefore <- round(balance$targetMeanBefore, 3)
     balance$comparatorMeanBefore <- round(balance$comparatorMeanBefore, 3)
     balance$targetMeanAfter <- round(balance$targetMeanAfter, 3)
