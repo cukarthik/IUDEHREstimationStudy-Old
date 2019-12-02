@@ -38,12 +38,12 @@ runCohortCharacterization <- function(connectionDetails,
   index <- grep(cohortId, cohortCounts$cohortDefinitionId)
   if (length(index)==0) {
     
-    ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[i], " becasue of no count."))  
+    ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[index], " becasue of no count."))  
 #    stop(paste0("ERROR: Trying to characterize a cohort that was not created! CohortID --> ", cohortsToCreate$cohortId[i], " Cohort Name --> ", cohortsToCreate$name[i]))
   
   } else if (cohortCounts$personCount[index] < minCellCount) {
      
-      ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[i], " low cell count."))  
+      ParallelLogger::logInfo(paste("Skipping Cohort Characterization for", cohortsToCreate$name[index], " low cell count."))  
   
   } else {
     
