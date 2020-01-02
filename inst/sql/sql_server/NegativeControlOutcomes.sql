@@ -24,9 +24,9 @@ SELECT
 FROM (
     SELECT d.person_id subject_id,
         c.ancestor_concept_id cohort_definition_id,
-        d.device_exposure_start_date cohort_start_date
-FROM @cdm_database_schema.device_exposure d
-INNER JOIN #Codesets c ON c.concept_id = d.device_concept_id
+        d.condition_start_date cohort_start_date
+FROM @cdm_database_schema.condition_occurrence d
+INNER JOIN #Codesets c ON c.concept_id = d.condition_concept_id
 ) s
 ;
 

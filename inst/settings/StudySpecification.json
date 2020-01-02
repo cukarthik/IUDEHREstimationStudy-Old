@@ -1680,7 +1680,7 @@
   "skeletonVersion": "v0.0.1",
   "negativeControlOutcomeCohortDefinition": {
     "detectOnDescendants": true,
-    "domains": ["device"],
+    "domains": ["condition"],
     "occurrenceType": "all"
   },
   "createdDate": null,
@@ -3379,7 +3379,7 @@
       "id": 1771054
     }
   ],
-  "name": "IUD OHDSI Network",
+  "name": "IUD OHDSI EHR Package",
   "modifiedDate": null,
   "modifiedBy": null,
   "conceptSets": [
@@ -5369,8 +5369,8 @@
     }
   ],
   "doPositiveControlSynthesis": false,
-  "id": 230,
-  "packageName": "IUDCLW",
+  "id": 262,
+  "packageName": "IUDEHRStudy",
   "negativeControls": [
     {
       "targetId": 1771647,

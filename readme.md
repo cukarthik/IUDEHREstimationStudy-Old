@@ -107,7 +107,6 @@ How to run
 	```
 
 4. Upload the file ```export/Results<DatabaseId>.zip``` in the output folder to the study coordinator.
-
 		
 5. To view the results, use the Shiny app:
 
@@ -120,12 +119,18 @@ How to run
 
 License
 =======
-The IUDCLW package is licensed under Apache License 2.0
+The IUDEHRStudy package is licensed under Apache License 2.0
 
 Development
 ===========
-IUDCLW was developed in ATLAS and R Studio.
+IUDEHRStudy was developed in ATLAS and R Studio. The package was modified to include additional analyses from the initial Atlas package. All additional analyses and code are located in the _AdditionalAnalysis.R_ file. The following are the additional analyses and modifications:
+1. Calculates counts to additional cohorts for sensitivity analysis
+2. Calculates the cumulative incidence of the cohorts
+3. Calculates the yearly distribution of all cohorts
+4. Creates KM graphs for the cohorts of interest
+5. Copies all diagnostic graphs in the diagnostic folder to the export folder 
+6. All cohort counts and distributions are filtered based on minimum cell count
 
 ### Development status
 
-Unknown
+Validating
