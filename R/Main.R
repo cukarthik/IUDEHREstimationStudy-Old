@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of IUDCLW
+# This file is part of IUDEHRStudy
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 #' Execute the Study
 #'
 #' @details
-#' This function executes the IUDCLW Study.
+#' This function executes the IUDEHRS Study.
 #' 
 #' The \code{createCohorts}, \code{synthesizePositiveControls}, \code{runAnalyses}, and \code{runDiagnostics} arguments
 #' are intended to be used to run parts of the full study at a time, but none of the parts are considerd to be optional.
@@ -132,7 +132,7 @@ execute <- function(connectionDetails,
                     maxCores = maxCores)
     
     cohortCounts <- read.csv(file.path(outputFolder, "CohortCounts.csv")) #get the cohort counts from earlier when cohorts are created
-    pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "IUDCLW")
+    pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "IUDEHRStudy")
     cohortsToCreate <- read.csv(pathToCsv)
 
     for (i in 1:nrow(cohortsToCreate)) {

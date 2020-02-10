@@ -5,11 +5,11 @@
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "IUDCLW"
+		"find": "IUDEHRStudy"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "IUDCLW"
+		"find": "IUDEHRStudy"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",

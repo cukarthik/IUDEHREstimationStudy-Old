@@ -1,0 +1,111 @@
+targetId,comparatorId,outcomeId,outcomeName,type
+1772699,1772698,4305080,Abnormal breathing,outcome
+1772699,1772698,138384,Acquired hypothyroidism,outcome
+1772699,1772698,137951,Acquired keratoderma,outcome
+1772699,1772698,194686,Acquired renal cystic disease,outcome
+1772699,1772698,138825,Actinic keratosis,outcome
+1772699,1772698,257004,Acute exacerbation of chronic obstructive airways disease,outcome
+1772699,1772698,199866,Acute gastritis,outcome
+1772699,1772698,436118,After-cataract with vision obscured,outcome
+1772699,1772698,381295,Age-related cataract,outcome
+1772699,1772698,433753,Alcohol abuse,outcome
+1772699,1772698,435243,Alcohol dependence,outcome
+1772699,1772698,439147,Amnesia,outcome
+1772699,1772698,200528,Ascites,outcome
+1772699,1772698,438409,Attention deficit hyperactivity disorder,outcome
+1772699,1772698,136057,Benign neoplasm of skin of trunk,outcome
+1772699,1772698,444367,Cholelithiasis without obstruction,outcome
+1772699,1772698,381292,Chronic allergic conjunctivitis,outcome
+1772699,1772698,432738,Chronic fatigue syndrome,outcome
+1772699,1772698,443597,Chronic kidney disease stage 3,outcome
+1772699,1772698,75860,Constipation,outcome
+1772699,1772698,4311591,Cramp in limb,outcome
+1772699,1772698,433163,Deficiency of macronutrients,outcome
+1772699,1772698,73575,Deformity of toe,outcome
+1772699,1772698,435796,Dehydration,outcome
+1772699,1772698,377910,Deviated nasal septum,outcome
+1772699,1772698,201061,Diaphragmatic hernia,outcome
+1772699,1772698,432730,Difficulty speaking,outcome
+1772699,1772698,74725,Displacement of cervical intervertebral disc without myelopathy,outcome
+1772699,1772698,433316,Dizziness and giddiness,outcome
+1772699,1772698,381877,Dysfunction of eustachian tube,outcome
+1772699,1772698,31317,Dysphagia,outcome
+1772699,1772698,433440,Dysthymia,outcome
+1772699,1772698,137351,Epidermoid cyst of skin,outcome
+1772699,1772698,197381,Epigastric pain,outcome
+1772699,1772698,30753,Esophagitis,outcome
+1772699,1772698,72715,Exostosis,outcome
+1772699,1772698,201418,"Flatulence, eructation and gas pain",outcome
+1772699,1772698,196456,Gallstone,outcome
+1772699,1772698,318800,Gastroesophageal reflux disease,outcome
+1772699,1772698,434613,Generalized anxiety disorder,outcome
+1772699,1772698,4168217,Generalized hyperhidrosis,outcome
+1772699,1772698,198400,Hemangioma of skin and subcutaneous tissue,outcome
+1772699,1772698,79864,Hematuria syndrome,outcome
+1772699,1772698,195562,Hemorrhoids,outcome
+1772699,1772698,433811,Hydronephrosis,outcome
+1772699,1772698,435511,Hypercalcemia,outcome
+1772699,1772698,434610,Hyperkalemia,outcome
+1772699,1772698,133729,Hyperparathyroidism,outcome
+1772699,1772698,4172432,Hyperpigmentation of skin,outcome
+1772699,1772698,141375,Hypertrophic condition of skin,outcome
+1772699,1772698,440129,Hypertrophy of nasal turbinates,outcome
+1772699,1772698,434004,Hypervolemia,outcome
+1772699,1772698,435510,Hypocalcemia,outcome
+1772699,1772698,437833,Hypokalemia,outcome
+1772699,1772698,4098604,Hypomagnesemia,outcome
+1772699,1772698,435515,Hypo-osmolality and or hyponatremia,outcome
+1772699,1772698,436375,Hypovolemia,outcome
+1772699,1772698,375806,Idiopathic peripheral neuropathy,outcome
+1772699,1772698,312950,IgE-mediated allergic asthma,outcome
+1772699,1772698,374375,Impacted cerumen,outcome
+1772699,1772698,4308509,Impaired fasting glycaemia,outcome
+1772699,1772698,76161,Impotence of organic origin,outcome
+1772699,1772698,441417,Incoordination,outcome
+1772699,1772698,40483107,Inflamed seborrheic keratosis,outcome
+1772699,1772698,139099,Ingrowing nail,outcome
+1772699,1772698,436962,Insomnia,outcome
+1772699,1772698,201322,Internal hemorrhoids without complication,outcome
+1772699,1772698,201620,Kidney stone,outcome
+1772699,1772698,198101,Lipoma of skin and subcutaneous tissue,outcome
+1772699,1772698,432798,"Mechanical complication of internal orthopedic device, implant AND/OR graft",outcome
+1772699,1772698,4033837,Melanocytic nevus of trunk,outcome
+1772699,1772698,4103703,Melena,outcome
+1772699,1772698,436940,Metabolic syndrome X,outcome
+1772699,1772698,318736,Migraine,outcome
+1772699,1772698,434005,Morbid obesity,outcome
+1772699,1772698,379805,Myopia,outcome
+1772699,1772698,30234,Neck sprain,outcome
+1772699,1772698,376065,Neurological disorder with diabetes type 2,outcome
+1772699,1772698,4209423,Nicotine dependence,outcome
+1772699,1772698,136661,Non-toxic nodular goiter,outcome
+1772699,1772698,437851,Open angle with borderline intraocular pressure,outcome
+1772699,1772698,77139,Open wound of finger without complication,outcome
+1772699,1772698,438120,Opioid dependence,outcome
+1772699,1772698,4211231,Panic disorder without agoraphobia,outcome
+1772699,1772698,321596,Peripheral venous insufficiency,outcome
+1772699,1772698,78162,Peripheral vertigo,outcome
+1772699,1772698,373478,Presbyopia,outcome
+1772699,1772698,4084229,Primary gout,outcome
+1772699,1772698,136184,Pruritus of skin,outcome
+1772699,1772698,261325,Pulmonary emphysema,outcome
+1772699,1772698,432883,"Recurrent major depressive episodes, moderate",outcome
+1772699,1772698,436246,Reduced libido,outcome
+1772699,1772698,443731,Renal disorder due to type 2 diabetes mellitus,outcome
+1772699,1772698,197006,Residual hemorrhoidal skin tags,outcome
+1772699,1772698,136773,Rosacea,outcome
+1772699,1772698,141932,Senile hyperkeratosis,outcome
+1772699,1772698,80824,Senile osteoporosis,outcome
+1772699,1772698,4110815,"Sensorineural hearing loss, bilateral",outcome
+1772699,1772698,313459,Sleep apnea,outcome
+1772699,1772698,81151,Sprain of ankle,outcome
+1772699,1772698,376382,Tension-type headache,outcome
+1772699,1772698,377575,Tinnitus,outcome
+1772699,1772698,437264,Tobacco dependence syndrome,outcome
+1772699,1772698,201254,Type 1 diabetes mellitus,outcome
+1772699,1772698,201826,Type 2 diabetes mellitus,outcome
+1772699,1772698,4193704,Type 2 diabetes mellitus without complication,outcome
+1772699,1772698,45768910,Uncomplicated asthma,outcome
+1772699,1772698,437246,Vitamin B deficiency,outcome
+1772699,1772698,436070,Vitamin D deficiency,outcome
+1772699,1772698,316127,Vitreous opacities,outcome
